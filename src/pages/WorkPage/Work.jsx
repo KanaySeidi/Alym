@@ -10,7 +10,7 @@ import house from "../../img/house.jpg";
 const Work = () => {
   return (
     <>
-      <div className={work.section}>
+      <div className={work.section} id="work">
         <h2 className={work.cont}>Как мы работаем</h2>
         <div className={work.container}>
           <div className={work.list}>

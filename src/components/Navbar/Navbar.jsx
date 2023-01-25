@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className={nb.section}>
         <div className={nb.container}>
           <div className={nb.leftside}>
-            <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
+            <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
               <img className={nb.logo} src={logo} alt="logo" />
             </Link>
           </div>
