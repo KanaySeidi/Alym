@@ -18,6 +18,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    
 }
 
 .list{
@@ -26,9 +27,12 @@
     flex-direction: row;
     border: none;
     border-radius: 5px;
-    background-color: #f8930a;
+    background-color: #f8930a;  
+}
 
-   
+.list:hover{
+    transform: scale(1.1);
+    transition: all 2s;
 }
 
 .item{
@@ -42,6 +46,7 @@
     font-size: 24px;
     padding-left: 4px;
     color: #ffff;
+    
 }
 
 .card{
@@ -56,3 +61,13 @@ h3{
    color: #302922;
 }
 
+
+@keyframes rotateList {
+   0%{
+    left: 0;
+   }
+
+   100%{
+    left: 200px;
+   }
+}
