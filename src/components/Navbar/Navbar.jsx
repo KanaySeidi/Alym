@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import Modal from "../Modal/Modal";
 
 const Navbar = () => {
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <div className={nb.section}>
