@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 const API = "https://sheetdb.io/api/v1/pqei9iwyn55ln";
 
 const Modal = ({ open, onClose }) => {
-  const navigate = useNavigate();
   const [newUser, setNewUser] = useState({
     name: "",
     tel: "",
@@ -29,6 +28,13 @@ const Modal = ({ open, onClose }) => {
         `${err.message}` && alert("Введите имя и телефон");
       }
     }
+  };
+
+  const handleClose = () => {
+    setTimeout(() => {
+      alert("Вы успешно отправили данные");
+      onClose();
+    }, 2000);
   };
 
   if (!open) return null;
@@ -64,7 +70,11 @@ const Modal = ({ open, onClose }) => {
                   setNewUser({ ...newUser, tel: e.target.value })
                 }
               />
-              <button className={mdl.modalBtn} type="submit">
+              <button
+                onClick={handleClose}
+                className={mdl.modalBtn}
+                type="submit"
+              >
                 Отправить
               </button>
             </form>
