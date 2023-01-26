@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import nb from "./Navbar.module.css";
 import logo from "../../img/logo2.svg";
 import { Link } from "react-scroll";
+import Modal from "../Modal/Modal";
 
 const Navbar = () => {
+  const [openModal, setOpenModal] = useState(true);
   return (
     <>
       <div className={nb.section}>
@@ -54,7 +56,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className={nb.rightside}>
-            <div className={nb.order}>Оставьте заявку</div>
+            <div onClick={() => setOpenModal(true)} className={nb.order}>
+              Оставьте заявку
+            </div>
+            <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
         </div>
       </div>
