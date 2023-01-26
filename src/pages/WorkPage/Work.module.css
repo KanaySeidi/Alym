@@ -28,6 +28,7 @@
     border: none;
     border-radius: 5px;
     background-color: #f8930a;  
+    cursor: pointer;
 }
 
 .list:hover{
