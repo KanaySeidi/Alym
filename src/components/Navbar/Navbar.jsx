@@ -12,45 +12,21 @@ const Navbar = () => {
         <div className={nb.container}>
           <div className={nb.leftside}>
             <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
-              <img className={nb.logo} src={logo} alt="logo" />
+              <p className={nb.logo}>ALYM KG</p>
             </Link>
           </div>
           <div className={nb.middle}>
             <ul className={nb.navlist}>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={500}
-              >
+              <Link to="about">
                 <li>Кто Мы</li>
               </Link>
-              <Link
-                to="work"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={500}
-              >
+              <Link to="work">
                 <li>Как мы работаем</li>
               </Link>
-              <Link
-                to="project"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={500}
-              >
+              <Link to="project">
                 <li>Проекты</li>
               </Link>
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={500}
-              >
+              <Link to="contact">
                 <li>Контакты</li>
               </Link>
             </ul>

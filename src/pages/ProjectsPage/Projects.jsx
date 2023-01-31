@@ -12,9 +12,9 @@ const Projects = () => {
         <div className={pr.container} id="project">
           <div className={pr.downline}></div>
 
-          <h2>Проекты</h2>
+          <h2>Услуги</h2>
 
-          <div className={pr.list}>
+          {/* <div className={pr.list}>
             <div className={pr.item}>
               <img src={pic1} alt="" />
             </div>
@@ -27,6 +27,11 @@ const Projects = () => {
             <div className={pr.item}>
               <img src={pic4} alt="" />
             </div>
+          </div> */}
+
+          <div>
+            1 Дом Коттедж под ключ 2 Металло-конструкция любой сложности 3
+            Обделечные услуги 4 Электро монтаж и техника
           </div>
         </div>
         <div className={pr.downline}></div>
