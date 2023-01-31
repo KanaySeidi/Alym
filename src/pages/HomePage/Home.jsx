@@ -1,33 +1,29 @@
 import React from "react";
+import TypeWritter from "../../components/TypeWritter/TypeWritter";
 import hero from "../../img/mainPlakat.jpg";
+import down from "../../img/down.png";
 import home from "./Home.module.css";
-import TypeWriterEffect from "react-typewriter-effect";
+import { Link } from "react-scroll";
+import Stage from "../StagePage/Stage";
 
 const Home = () => {
   return (
     <>
       <div className={home.section} id="home">
-        <div className={home.intro}>
-          <img className={home.heroimg} src={hero} alt="hero img" />
-          <TypeWriterEffect
-            textStyle={{
-              fontFamily: "Play",
-              color: "#3F3D56",
-              fontWeight: 500,
-              fontSize: "1.5em",
-            }}
-            startDelay={2000}
-            cursorColor="#3F3D56"
-            multiText={[
-              "Этапы строительство дома",
-              "Тебе надоело искать рабочих",
-            ]}
-            multiTextDelay={1000}
-            typeSpeed={60}
-            multiTextLoop
-          />
+        <img className={home.heroimg} src={hero} alt="hero img" />
+        <div className={home.container}>
+          <TypeWritter />
+          <Link
+            to="stage"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <img className={home.stage} src={down} alt="down arrow icon" />
+          </Link>
+          <Stage />
         </div>
-        <div className={home.container}>{/* <Contact /> */}</div>
       </div>
     </>
   );

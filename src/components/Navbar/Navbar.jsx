@@ -6,9 +6,20 @@ import Modal from "../Modal/Modal";
 
 const Navbar = () => {
   const [openModal, setOpenModal] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+
+  const setWhiteBar = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", setWhiteBar);
   return (
     <>
-      <div className={nb.section}>
+      <div className={`${nb.navbar} ${navbar ? nb.active : navbar}`}>
         <div className={nb.container}>
           <div className={nb.leftside}>
             <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
