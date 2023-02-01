@@ -21,8 +21,9 @@ const TypeWritter = () => {
           "Боишься ошибиться?",
           "Не хватает сил и времени на ремонт?",
           "Надоело искать компетентных рабочих?",
+          "ALYM KG поможет Вам в ремонте",
         ]}
-        multiTextDelay={3000}
+        multiTextDelay={2000}
         typeSpeed={40}
         multiTextLoop
       />

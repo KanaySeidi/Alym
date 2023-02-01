@@ -5,6 +5,7 @@ import down from "../../img/down.png";
 import home from "./Home.module.css";
 import { Link } from "react-scroll";
 import Stage from "../StagePage/Stage";
+import About from "../AboutUsPage/About";
 
 const Home = () => {
   return (
@@ -14,14 +15,15 @@ const Home = () => {
         <div className={home.container}>
           <TypeWritter />
           <Link
-            to="stage"
+            to="about"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-250}
             duration={500}
           >
             <img className={home.stage} src={down} alt="down arrow icon" />
           </Link>
+          <About />
           <Stage />
         </div>
       </div>
