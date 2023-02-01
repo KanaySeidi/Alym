@@ -44,7 +44,7 @@ span{
 .downline{
     border: 4px solid #f8930a;
     border-radius: 2px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .contact{
@@ -58,4 +58,14 @@ span{
     width: 80px;
     cursor: pointer;
 
+}
+
+.pers p {
+    background: rgba(0, 0, 0, .5);
+    font-size: 20px;
+    padding: 5px;
+    margin:  10px 0;
+    color: #ffff;
+    border-radius: 5px;
+    position: absolute;
 }

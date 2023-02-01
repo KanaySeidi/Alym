@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import nb from "./Navbar.module.css";
-import logo from "../../img/logo2.svg";
 import { Link } from "react-scroll";
 import Modal from "../Modal/Modal";
 
@@ -28,11 +27,23 @@ const Navbar = () => {
           </div>
           <div className={nb.middle}>
             <ul className={nb.navlist}>
-              <Link to="about">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 <li>Кто Мы</li>
               </Link>
-              <Link to="work">
-                <li>Как мы работаем</li>
+              <Link
+                to="stage"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
+              >
+                <li>Этапы</li>
               </Link>
               <Link to="project">
                 <li>Проекты</li>

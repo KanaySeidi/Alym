@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ab from "./About.module.css";
 import telegram from "../../img/telegram.png";
 import instagram from "../../img/instagram.png";
@@ -7,6 +7,9 @@ import call from "../../img/phone-call.png";
 import gmail from "../../img/gmail.png";
 
 const About = () => {
+  const [tel, setTel] = useState(false);
+  const [mail, setMail] = useState(false);
+
   return (
     <>
       <div className={ab.section} id="about">
@@ -27,21 +30,23 @@ const About = () => {
               в срок и в договоренном бюджете.
             </p>
             <div className={ab.contact}>
-              <div>
+              <div className={ab.pers}>
                 <img
-                  onClick={() => window.open("+996778145852")}
+                  onClick={() => setTel((prev) => !prev)}
                   className={ab.contItem}
                   src={call}
                   alt=""
                 />
+                {tel && <p>+996 778 145 852 </p>}
               </div>
-              <div>
+              <div className={ab.pers}>
                 <img
-                  onClick={() => window.open("alyma0787@gmail.com")}
+                  onClick={() => setMail((prev) => !prev)}
                   className={ab.contItem}
                   src={gmail}
                   alt=""
                 />
+                {mail && <p>alyma0787@gmail.com</p>}
               </div>
               <div>
                 <img
