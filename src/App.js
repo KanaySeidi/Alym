@@ -6,6 +6,7 @@ import Fundam from "./pages/Stage/FundamPage/Fundam";
 import InRoom from "./pages/Stage/InRoomPage/InRoom";
 import Maket from "./pages/Stage/MaketPage/Maket";
 import Roof from "./pages/Stage/RoofPage/Roof";
+import ScrollToTop from "./utils/scroll";
 
 const PATHES = {
   "/buy": 1,
@@ -17,6 +18,7 @@ const PATHES = {
 
 function App() {
   const location = useLocation();
+  ScrollToTop();
   return (
     <div className="App">
       {!PATHES[location.pathname] ? <Navbar /> : null}
