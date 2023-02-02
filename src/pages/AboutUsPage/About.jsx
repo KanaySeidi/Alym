@@ -59,7 +59,7 @@ const About = () => {
               <div>
                 <img
                   onClick={() =>
-                    window.open("https://www.instagram.com/alym.kg02/")
+                    window.open("https://www.instagram.com/alym._kg/")
                   }
                   className={ab.contItem}
                   src={instagram}
