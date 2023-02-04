@@ -1,8 +1,6 @@
 .section{
     width: 100%;
     height: 100%;
-    
-    
 }
 
 .container{
@@ -11,12 +9,13 @@
 }
 
 .container h2{
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+    text-align: center;
 }
 
 .text{
     font-size: 18px;
-    line-height: 40px;
+    line-height: 60px;
     color: #302922;
     animation-name: mainTxt;
     animation-duration: 4s;
@@ -41,23 +40,18 @@ span{
     color: #f8930a;
 }
 
-.downline{
-    border: 4px solid #f8930a;
-    border-radius: 2px;
-    margin-top: 60px;
-}
+
 
 .contact{
     display: flex;
     justify-content: space-evenly;
     width: 1100px;
-    margin: 40px auto;
+    margin: 40px auto 0;
 }
 
 .contItem{
     width: 80px;
     cursor: pointer;
-
 }
 
 .pers p {
@@ -68,4 +62,39 @@ span{
     color: #ffff;
     border-radius: 5px;
     position: absolute;
+    z-index: 4;
+}
+
+
+.downline{
+    width: 100%;
+    display: flex;
+    margin-bottom: 900px;
+}
+
+.bg2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+}
+
+.descr{
+    position: relative;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 70px;
+    left: 300px;
+    top: 300px;
+    color: #ffff;
+    background: rgba(0, 0, 0, .6);
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+}
+
+.mainWord{
+    color: #f8930a;
+    font-size: 54px;
 }

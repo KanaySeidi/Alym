@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Stage = () => {
   return (
-    <div>
+    <>
       <div className={stage.section} id="stage">
         <div className={stage.container}>
           <div className={stage.mainText}>Этапы строительства дома</div>
@@ -46,8 +46,9 @@ const Stage = () => {
             </Link>
           </div>
         </div>
+        <div className={stage.downline}></div>
       </div>
-    </div>
+    </>
   );
 };
 

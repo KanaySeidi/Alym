@@ -5,6 +5,7 @@ import instagram from "../../img/instagram.png";
 import whatsapp from "../../img/whatsapp.png";
 import call from "../../img/phone-call.png";
 import gmail from "../../img/gmail.png";
+import bg2 from "../../img/bg2.jpg";
 
 const About = () => {
   const [tel, setTel] = useState(false);
@@ -80,7 +81,15 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className={ab.downline}></div>
+          <div className={ab.downline}>
+            <img className={ab.bg2} src={bg2} alt="" />
+            <p className={ab.descr}>
+              Мы не просто строим&nbsp;{" "}
+              <span className={ab.mainWord}>дома</span>
+              <br /> Мы закладываем фундамент вашего&nbsp;&nbsp;
+              <span className={ab.mainWord}>уюта</span>
+            </p>
+          </div>
         </div>
       </div>
     </>

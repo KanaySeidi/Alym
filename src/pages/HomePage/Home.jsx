@@ -6,6 +6,7 @@ import home from "./Home.module.css";
 import { Link } from "react-scroll";
 import Stage from "../StagePage/Stage";
 import About from "../AboutUsPage/About";
+import ServicesPage from "../ServicesPage/ServicesPage";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
           </Link>
           <About />
           <Stage />
+          <ServicesPage />
         </div>
       </div>
     </>
