@@ -6,7 +6,7 @@ import montajFasad1 from "../../../img/montajFasad2.png";
 
 const FasadSer = () => {
   return (
-    <div>
+    <>
       <div className={fasad.section}>
         <div className={fasad.container}>
           <div className={fasad.list}>
@@ -52,7 +52,7 @@ const FasadSer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -45,12 +45,18 @@ const Navbar = () => {
               >
                 <li>Этапы</li>
               </Link>
-              <Link to="project">
-                <li>Проекты</li>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
+              >
+                <li>Наши Услуги</li>
               </Link>
-              <Link to="contact">
+              {/* <Link to="contact">
                 <li>Контакты</li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
           <div className={nb.rightside}>

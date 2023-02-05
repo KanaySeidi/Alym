@@ -13,7 +13,7 @@ import krovRab from "../../img/krovRab.jpeg";
 const ServicesPage = () => {
   return (
     <>
-      <div className={ser.section}>
+      <div className={ser.section} id="services">
         <div className={ser.container}>
           <h2 className={ser.text}>Наши Услуги</h2>
           <div className={ser.list}>
