@@ -2,7 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ser from "./ServicesPage.module.css";
 import bricks from "../../img/projectSer.jpg";
-import bg1 from "../../img/bg1.jpg";
+import fasad from "../../img/fasad.jpg";
+import zabor from "../../img/zabor.jpg";
+import naves from "../../img/naves.jpg";
+import engiComm from "../../img/engiComm.jpg";
+import fundam from "../../img/fundam.jpg";
+import kosRem from "../../img/kosmetRem.jpeg";
+import krovRab from "../../img/krovRab.jpeg";
 
 const ServicesPage = () => {
   return (
@@ -16,58 +22,73 @@ const ServicesPage = () => {
               <div className={ser.item}>
                 <h2 className={ser.itemText}>Проектирование Домов</h2>
                 <Link to="services6">
-                  <button>Узнать больше</button>
+                  <button className={ser.button}>Узнать больше</button>
                 </Link>
               </div>
             </div>
             <div className={ser.card}>
-              <img className={ser.cardImg} src={bricks} alt="" />
+              <img className={ser.cardImg} src={kosRem} alt="" />
               <div className={ser.item}>
-                <h2 className={ser.itemText}>Проектирование Домов</h2>
-                <Link to="services6">
-                  <button>Узнать больше</button>
+                <h2 className={ser.itemText}>Строительные работы</h2>
+                <Link to="services3">
+                  <button className={ser.button}>Узнать больше</button>
                 </Link>
               </div>
             </div>
             <div className={ser.card}>
-              <img className={ser.cardImg} src={bricks} alt="" />
+              <img className={ser.cardImg} src={krovRab} alt="" />
               <div className={ser.item}>
-                <h2 className={ser.itemText}>Проектирование Домов</h2>
-                <Link to="services6">
-                  <button>Узнать больше</button>
+                <h2 className={ser.itemText}>Кровельные Работы</h2>
+                <Link to="services7">
+                  <button className={ser.button}>Узнать больше</button>
                 </Link>
               </div>
             </div>
             <div className={ser.card}>
-              <img className={ser.cardImg} src={bricks} alt="" />
+              <img className={ser.cardImg} src={engiComm} alt="" />
               <div className={ser.item}>
-                <h2 className={ser.itemText}>Проектирование Домов</h2>
-                <Link to="services6">
-                  <button>Узнать больше</button>
+                <h2 className={ser.itemText}>Инженерные Коммуникации</h2>
+                <Link to="services1">
+                  <button className={ser.button}>Узнать больше</button>
                 </Link>
               </div>
             </div>
-            {/* <Link to="services3">
-            <div>Ремонт Домов</div>
-          </Link>
-          <Link to="services7">
-            <div>Кровельные работы</div>
-          </Link>
-          <Link to="services4">
-            <div>Строительство Фундамента</div>
-          </Link>
-          <Link to="services1">
-            <div>Инженерные Коммуникации</div>
-          </Link>
-          <Link to="services5">
-            <div>Строительство Навесов</div>
-          </Link>
-          <Link to="services2">
-            <div>Фасад Домов</div>
-          </Link>
-          <Link to="services8">
-            <div>Строительство Заборов</div>
-          </Link> */}
+            <div className={ser.card}>
+              <img className={ser.cardImg} src={fundam} alt="" />
+              <div className={ser.item}>
+                <h2 className={ser.itemText}>Строительство Фундамента</h2>
+                <Link to="services4">
+                  <button className={ser.button}>Узнать больше</button>
+                </Link>
+              </div>
+            </div>
+            <div className={ser.card}>
+              <img className={ser.cardImg} src={naves} alt="" />
+              <div className={ser.item}>
+                <h2 className={ser.itemText}>Строительство Навесов</h2>
+                <Link to="services5">
+                  <button className={ser.button}>Узнать больше</button>
+                </Link>
+              </div>
+            </div>
+            <div className={ser.card}>
+              <img className={ser.cardImg} src={fasad} alt="" />
+              <div className={ser.item}>
+                <h2 className={ser.itemText}>Фасад Домов</h2>
+                <Link to="services2">
+                  <button className={ser.button}>Узнать больше</button>
+                </Link>
+              </div>
+            </div>
+            <div className={ser.card}>
+              <img className={ser.cardImg} src={zabor} alt="" />
+              <div className={ser.item}>
+                <h2 className={ser.itemText}>Строительство Заборов</h2>
+                <Link to="services8">
+                  <button className={ser.button}>Узнать больше</button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

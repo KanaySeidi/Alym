@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
           <div className={nb.rightside}>
             <div onClick={() => setOpenModal(true)} className={nb.order}>
-              Оставьте заявку
+              <span className={nb.orderS}>Оставьте заявку</span>
             </div>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
