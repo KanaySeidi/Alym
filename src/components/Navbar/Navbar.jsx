@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className={nb.container}>
           <div className={nb.leftside}>
             <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
-              <img width={250} src={logo} alt="" />
+              <img className={nb.logo} src={logo} alt="" />
             </Link>
           </div>
           <div className={nb.middle}>
