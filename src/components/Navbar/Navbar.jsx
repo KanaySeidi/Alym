@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import nb from "./Navbar.module.css";
 import { Link } from "react-scroll";
 import Modal from "../Modal/Modal";
+import logo from "../../img/logo.svg";
 
 const Navbar = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
         <div className={nb.container}>
           <div className={nb.leftside}>
             <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
-              <p className={nb.logo}>ALYM KG</p>
+              <img width={250} src={logo} alt="" />
             </Link>
           </div>
           <div className={nb.middle}>
@@ -54,9 +55,6 @@ const Navbar = () => {
               >
                 <li>Наши Услуги</li>
               </Link>
-              {/* <Link to="contact">
-                <li>Контакты</li>
-              </Link> */}
             </ul>
           </div>
           <div className={nb.rightside}>
