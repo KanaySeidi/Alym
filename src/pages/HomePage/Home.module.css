@@ -33,11 +33,10 @@
 
 
 
-@media screen and (max-width: 868px ) {
+@media screen and (max-device-width: 868px ) {
     
     .section{
         width: 768px;
-        overflow: hidden;
     }
     
     
@@ -56,23 +55,19 @@
     }
 
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-device-width: 425px) {
   
     .section{
-         width: 425px;
-         overflow: hidden;
+         width: 393px;
      }
      
      .container{
-         width: 420px;
+         width: 393px;
      }
  
-     .heroimg{
-         width: 425px;
+     .introImg{
+         width: 393px;
          height: 399px;
-         object-fit: contain;
-         top: -86px;
-         left: 0;
      }
  
      .stage{
