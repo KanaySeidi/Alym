@@ -31,9 +31,18 @@
 }
 
 
+
+
 @media screen and (max-width: 868px ) {
+    
     .section{
         width: 768px;
+        overflow: hidden;
+    }
+    
+    
+    .container{
+        width: 748px;
     }
 
     .introImg{
@@ -41,46 +50,34 @@
         height: 499px;
     }
 
-    .container{
-        width: 748px;
-        margin: 0 auto;
-    }
-
-
     .stage{
         width: 80px;
         margin-left: 45%;
     }
 
 }
-
 @media screen and (max-width: 425px) {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
+  
     .section{
-        width: 425px;
-    }
-    
-    .container{
-        width: 420px;
-        margin: 0 auto;
-    }
+         width: 425px;
+         overflow: hidden;
+     }
+     
+     .container{
+         width: 420px;
+     }
+ 
+     .heroimg{
+         width: 425px;
+         height: 399px;
+         object-fit: contain;
+         top: -86px;
+         left: 0;
+     }
+ 
+     .stage{
+         width: 40px;
+         margin-left: 85%;
+     }
+ }
 
-    .heroimg{
-        width: 425px;
-        height: 399px;
-        object-fit: contain;
-        position: relative;
-        top: -86px;
-        left: 0;
-    }
-
-    .stage{
-        width: 40px;
-        margin-left: 85%;
-    }
-}
