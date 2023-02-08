@@ -14,7 +14,7 @@ const Home = () => {
       <div className={home.section} id="home">
         <img className={home.introImg} src={hero} alt="hero img" />
         <div className={home.container}>
-          {/* <TypeWritter /> */}
+          <TypeWritter />
           <Link
             to="about"
             spy={true}
@@ -24,7 +24,7 @@ const Home = () => {
           >
             <img className={home.stage} src={down} alt="down arrow icon" />
           </Link>
-          {/* <About /> */}
+          <About />
           {/* <Stage /> */}
           {/* <ServicesPage /> */}
         </div>
