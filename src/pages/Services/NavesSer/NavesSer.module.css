@@ -95,3 +95,30 @@
 .card h2{
     font-size: 24px;
 }
+
+@media screen and (max-device-width: 768px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container p {
+        margin-left: 20px;
+    }
+
+    .list{
+        flex-wrap: wrap;
+        margin: 20px 30px 0;
+    }
+
+    .item img{
+        width: 120px;
+    }
+
+    .box p {
+        font-size: 18px;
+        margin: 0 20px;
+        margin-bottom: 10px;
+        line-height: 42px;
+    }
+}

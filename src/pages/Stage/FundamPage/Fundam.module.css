@@ -80,3 +80,23 @@
 .container p:last-child{
     margin-bottom: 100px;
 }
+
+@media screen and (max-device-width: 768px) {
+    .container{
+        width: 100%;
+        margin: 0 auto  ;
+    }
+
+    .container p {
+        font-size: 16px;
+        margin: 10px 10px;
+        line-height: 42px;
+    }
+
+    .container li {
+        margin-left: 50px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 42px;
+    }
+}
