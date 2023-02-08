@@ -40,9 +40,9 @@ const Modal = ({ open, onClose }) => {
   if (!open) return null;
   return (
     <>
-      <div className={mdl.section}>
+      <div className={mdl.section} onClick={onClose}>
         <div className={mdl.container}>
-          <div className={mdl.box}>
+          <div className={mdl.box} onClick={(e) => e.stopPropagation()}>
             <div className={mdl.wrapper}>
               <p className={mdl.text}>
                 Оставьте свои данные и наши менеджера с вами свяжуться

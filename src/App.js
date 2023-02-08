@@ -15,6 +15,7 @@ import ProjectSer from "./pages/Services/ProjectSer/ProjectSer";
 import RoofSer from "./pages/Services/RoofSer/RoofSer";
 import WallSer from "./pages/Services/WallSer/WallSer";
 import ScrollToTop from "./utils/scroll";
+import Footer from "./components/Footer/Footer";
 
 const PATHES = {
   "/buy": 1,
@@ -38,6 +39,7 @@ function App() {
   return (
     <div className="App">
       {!PATHES[location.pathname] ? <Navbar /> : null}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/wall" element={<Fundam />} />
@@ -54,6 +56,7 @@ function App() {
         <Route path="/services7" element={<RoofSer />} />
         <Route path="/services8" element={<WallSer />} />
       </Routes>
+      {/* <Footer /> */}
     </div>
   );
 }
