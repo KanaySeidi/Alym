@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <div className={home.section} id="home">
-        <img className={home.heroimg} src={hero} alt="hero img" />
+        <img className={home.introImg} src={hero} alt="hero img" />
         <div className={home.container}>
           <TypeWritter />
           <Link
@@ -24,9 +24,9 @@ const Home = () => {
           >
             <img className={home.stage} src={down} alt="down arrow icon" />
           </Link>
-          <About />
-          <Stage />
-          <ServicesPage />
+          {/* <About /> */}
+          {/* <Stage /> */}
+          {/* <ServicesPage /> */}
         </div>
       </div>
     </>

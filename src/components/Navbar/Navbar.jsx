@@ -3,6 +3,7 @@ import nb from "./Navbar.module.css";
 import { Link } from "react-scroll";
 import Modal from "../Modal/Modal";
 import logo from "../../img/logo.svg";
+import Burger from "../Burger/Burger";
 
 const Navbar = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -20,8 +21,10 @@ const Navbar = () => {
   return (
     <>
       <div className={`${nb.navbar} ${navbar ? nb.active : navbar}`}>
+        <div className={nb.burger}>
+          <Burger />
+        </div>
         <div className={nb.container}>
-          <div className={nb.burger}></div>
           <div className={nb.leftside}>
             <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
               <img className={nb.logo} src={logo} alt="" />

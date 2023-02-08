@@ -9,7 +9,7 @@ const TypeWritter = () => {
           fontFamily: "Play",
           color: "#ffff",
           fontWeight: 500,
-          fontSize: "3.5em",
+          fontSize: "2.5em",
           marginTop: "-5em",
           marginBottom: "1em",
         }}
