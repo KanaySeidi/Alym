@@ -135,16 +135,16 @@
 
   .order::after{
     background: #38ef7d;
-  content: "";
-  height: 155px;
-  left: -75px;
-  opacity: 0.4;
-  position: absolute;
-  top: -50px;
-  transform: rotate(35deg);
-  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  width: 50px;
-  z-index: -10;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
   }
 
   .order:hover::after{
@@ -152,27 +152,34 @@
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   }
 
- 
-
-
   @media screen and (max-width: 768px) {
+
+    .navbar{
+      width: 768px;
+    }
     .container{
       display: none;
     }
     
     .burger{
       display: flex;
+      width: 768px;
     }
   }
 
  
 
   @media screen and (max-width: 425px) {
+    .navbar{
+      width: 425px;
+    }
+
     .container{
       display: none;
     }
     
     .burger{
       display: flex;
+      width: 425px;
     }
   }

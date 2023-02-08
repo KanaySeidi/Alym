@@ -12,8 +12,9 @@ const TypeWritter = () => {
           fontSize: "2.5em",
           marginTop: "-5em",
           marginBottom: "1em",
+          marginLeft: "1em",
         }}
-        startDelay={0}
+        startDelay={1000}
         cursorColor="#3F3D56"
         multiText={[
           "Построить дом, а что нужно для этого?",
