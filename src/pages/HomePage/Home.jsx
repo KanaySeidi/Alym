@@ -14,7 +14,7 @@ const Home = () => {
       <div className={home.section} id="home">
         <img className={home.introImg} src={hero} alt="hero img" />
         <div className={home.container}>
-          <TypeWritter />
+          {/* <TypeWritter /> */}
           <Link
             to="about"
             spy={true}

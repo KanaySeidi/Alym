@@ -163,7 +163,7 @@
     
     .burger{
       display: flex;
-      width: 768px;
+      width: auto;
     }
   }
 
@@ -180,6 +180,6 @@
     
     .burger{
       display: flex;
-      width: 425px;
+      width: auto;
     }
   }
