@@ -58,21 +58,21 @@
 @media screen and (max-device-width: 425px) {
   
     .section{
-         width: 425px;
+         width: 100%;
      }
      
      .container{
-         width: 425px;
+         width: 100%;
      }
  
      .introImg{
-         width: 425px;
+         width: 100%;
          height: 399px;
      }
  
      .stage{
          width: 40px;
-         margin-left: 85%;
+         margin-left: 45%;
      }
  }
 
