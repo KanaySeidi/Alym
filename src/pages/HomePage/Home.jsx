@@ -25,8 +25,8 @@ const Home = () => {
             <img className={home.stage} src={down} alt="down arrow icon" />
           </Link>
           <About />
-          {/* <Stage /> */}
-          {/* <ServicesPage /> */}
+          <Stage />
+          <ServicesPage />
         </div>
       </div>
     </>
