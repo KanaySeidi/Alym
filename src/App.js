@@ -36,6 +36,7 @@ const PATHES = {
 function App() {
   const location = useLocation();
   ScrollToTop();
+
   return (
     <div className="App">
       {!PATHES[location.pathname] ? <Navbar /> : null}
@@ -56,7 +57,7 @@ function App() {
         <Route path="/services7" element={<RoofSer />} />
         <Route path="/services8" element={<WallSer />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

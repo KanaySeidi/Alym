@@ -96,6 +96,10 @@
         margin: 0 auto  ;
     }
 
+    .container h1{
+        text-align: center;
+    }
+
     .container p {
         font-size: 16px;
         margin: 10px 10px;

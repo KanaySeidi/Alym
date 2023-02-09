@@ -7,6 +7,7 @@ import { Link } from "react-scroll";
 import Stage from "../StagePage/Stage";
 import About from "../AboutUsPage/About";
 import ServicesPage from "../ServicesPage/ServicesPage";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
