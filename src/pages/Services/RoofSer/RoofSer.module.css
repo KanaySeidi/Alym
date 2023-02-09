@@ -87,3 +87,13 @@
         line-height: 42px;
     }
 }
+
+@media screen and (max-device-width: 425px) {
+    .item {
+        width: 100%;
+    }
+
+    .item img{
+        width: 100px;
+    }
+}
