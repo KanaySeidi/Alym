@@ -21,9 +21,6 @@ const Navbar = () => {
   return (
     <>
       <div className={`${nb.navbar} ${navbar ? nb.active : navbar}`}>
-        <div className={nb.burger}>
-          <Burger />
-        </div>
         <div className={nb.container}>
           <div className={nb.leftside}>
             <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
